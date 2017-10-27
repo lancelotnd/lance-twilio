@@ -3,5 +3,5 @@
     echo "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n";
 ?>
 <Response>
-    <Say>Hello Monkey</Say>
+    <Say>Hello Lancelot, this is obviously working</Say>
 </Response>
