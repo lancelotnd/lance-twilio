@@ -5,4 +5,4 @@ $assignment_instruction = [
 ];
 
 header('Content-Type: application/json');
-echo json_encode($assignment_instruction);
+echo json_encode($assignment_instruction);  
