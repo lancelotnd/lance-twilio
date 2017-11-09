@@ -19,6 +19,6 @@ print $response;
 
 //this is the part that make a call other participants and will  add them to the same conference room that caller is.
 $call = $client->calls->create(
-    "yourClient", "+14505002017",
+    "+15819893167", "+14505002017",
     array("url" => "http://lancelotsystems.com/twilio-php-app/Conference.xml")
 );
