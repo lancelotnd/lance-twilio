@@ -26,5 +26,6 @@ header("Content-Type: application/xml; charset=utf-8");
     <Say>Hello <?php echo $name ?>.</Say>
     <Say language="fr">Pour le français, faites le 1.</Say>
     <Say language="en">For English, please hold or press two.</Say>
+    <Play> apple.mp3 </Play>
   </Gather>
 </Response>
