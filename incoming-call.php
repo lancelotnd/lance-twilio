@@ -3,7 +3,7 @@ header("Content-Type: application/xml; charset=utf-8");
 // make an associative array of callers we know, indexed by phone number
    $people = array(
        "+15813370030"=>"sebastien.mp3",
-       "+15819893167"=>"Lancelot",
+       "+15819893167"=>"laurent.mp3",
        "+15819955853"=>"Jimmy",
        "+14185646258"=>"Alexandre"
    );
