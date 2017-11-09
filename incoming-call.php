@@ -22,8 +22,11 @@ header("Content-Type: application/xml; charset=utf-8");
 
 
 <Response>
-  <Gather action="enqueue-call.php" numDigits="1" timeout="5">
      <Play> <?php echo $name ?> </Play>
           <Play> patienter.mp3</Play>
-  </Gather>
+          <Dial>
+              <Conference startConferenceOnEnter="false">
+                  moderated-conference-room
+              </Conference>
+          </Dial>
 </Response>
