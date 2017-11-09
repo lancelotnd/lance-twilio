@@ -25,7 +25,7 @@ header("Content-Type: application/xml; charset=utf-8");
      <Play> <?php echo $name ?> </Play>
           <Play> patienter.mp3</Play>
           <Dial>
-              <Conference startConferenceOnEnter="false">
+              <Conference startConferenceOnEnter="True">
                   moderated-conference-room
                   <Dial>
                         <Number>+15819893167</Number>
