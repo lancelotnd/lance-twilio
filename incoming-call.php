@@ -27,6 +27,9 @@ header("Content-Type: application/xml; charset=utf-8");
           <Dial>
               <Conference startConferenceOnEnter="false">
                   moderated-conference-room
+                  <Dial>
+                        <Number>+15819893167</Number>
+                </Dial>
               </Conference>
           </Dial>
 </Response>
