@@ -1,24 +1,24 @@
 <?php
-	// The PHP Twilio helper library. Get it here http://www.twilio.com/docs/libraries/
-	require_once('twilio.php');
+require_once '/vendor/autoload.php'; // Loads the library
+use Twilio\Rest\Client;
 
-	$API_VERSION = '2010-04-01';
-	$ACCOUNT_SID = 'AC190046e06b0612f0f1be5beab91f7030';
-	$AUTH_TOKEN = 'a0e68c354c1a4d54021a99800a031040';
+// Your Account Sid and Auth Token from twilio.com/user/account
+$sid = "AC190046e06b0612f0f1be5beab91f7030";
+$token = "a0e68c354c1a4d54021a99800a031040";
 
-	$client = new TwilioRestClient($ACCOUNT_SID, $AUTH_TOKEN);
+$client = new Client($sid, $token);
 
-	// The phone numbers of the people to be called
-	$participants = array('+15819893167', '+15813370030');
+$response = new Twiml;
+$dial = $response->dial();
+$dial->conference('Room 123', array(
+                'startConferenceOnEnter' => True,
+                'endConferenceOnExit' => True
+                ));
+print $response;
 
-	// Go through the participants array and call each person.
-	foreach ($participants as $particpant)
-	{
-		$vars = array(
-			'From' => '+14505002017',
-			'To' => $participant,
-			'Url' => 'http://lancelotsystems.com/twilio-php-app/Conference.xml');
 
-		$response = $client->request("/$API_VERSION/Accounts/$ACCOUNT_SID/Calls", "POST", $vars);
-	}
-?>
+//this is the part that make a call other participants and will  add them to the same conference room that caller is.
+$call = $client->calls->create(
+    "yourClient", "+14505002017",
+    array("url" => "http://lancelotsystems.com/twilio-php-app/Conference.xml")
+);
