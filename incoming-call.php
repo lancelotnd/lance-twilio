@@ -2,7 +2,7 @@
 header("Content-Type: application/xml; charset=utf-8");
 // make an associative array of callers we know, indexed by phone number
    $people = array(
-       "+15813370030"=>"Sebastien",
+       "+15813370030"=>"sebastien.mp3",
        "+15819893167"=>"Lancelot",
        "+15819955853"=>"Jimmy",
        "+14185646258"=>"Alexandre"
@@ -11,7 +11,7 @@ header("Content-Type: application/xml; charset=utf-8");
    // if the caller is known, then greet them by name
    // otherwise, consider them just another monkey
    if(!$name = $people[$_REQUEST['From']])
-       $name = "Customer";
+       $name = "SylvainParé.mp3";
 
    // now greet the caller
    header("content-type: text/xml");
@@ -23,9 +23,7 @@ header("Content-Type: application/xml; charset=utf-8");
 
 <Response>
   <Gather action="enqueue-call.php" numDigits="1" timeout="5">
-    <Say>Hello <?php echo $name ?>.</Say>
-    <Say language="fr">Pour le français, faites le 1.</Say>
-    <Say language="en">For English, please hold or press two.</Say>
-    <Play> apple.mp3 </Play>
+     <Play> <?php echo $name ?> </Play>
+          <Play> patienter.mp3</Play>
   </Gather>
 </Response>
