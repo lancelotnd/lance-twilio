@@ -20,8 +20,8 @@
 //----------------------------------------------------------------
 define( 'DB_HOSTNAME', '138.197.173.90' );
 define( 'DB_DATABASE', 'LNContacts' );
-define( 'DB_USERNAME', 'lancelotn' );
-define( 'DB_PASSWORD', 'lancelotn' );
+define( 'DB_USERNAME', 'twiliowatch' );
+define( 'DB_PASSWORD', 'dF3hzZZkeAv+8(tQ' );
 
 //----------------------------------------------------------------
 // END OF FILE
