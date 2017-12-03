@@ -21,7 +21,7 @@
 define( 'DB_HOSTNAME', '138.197.173.90' );
 define( 'DB_DATABASE', 'LNContacts' );
 define( 'DB_USERNAME', 'lancelotn' );
-define( 'DB_PASSWORD', 'Wdgwwcdo' );
+define( 'DB_PASSWORD', 'lancelotn' );
 
 //----------------------------------------------------------------
 // END OF FILE
